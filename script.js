@@ -32,14 +32,14 @@ function updateDots() {
     const diff = i - currentIndex;
 
     if (diff === 0) {
-      dot.style.opacity = '1';
-      dot.style.pointerEvents = 'auto';
+  dot.style.opacity = '1';
+  dot.style.pointerEvents = 'auto';
     } else if (Math.abs(diff) === 1 || Math.abs(diff) === 2) {
-      dot.style.opacity = '0.5';
-      dot.style.pointerEvents = 'auto';
+  dot.style.opacity = '0.5';
+  dot.style.pointerEvents = 'auto';
     } else {
-      dot.style.opacity = '0';
-      dot.style.pointerEvents = 'none';
+  dot.style.opacity = '0';
+  dot.style.pointerEvents = 'none';
     }
 
     dot.classList.toggle('active', i === currentIndex);
@@ -68,5 +68,6 @@ dots.forEach(dot => {
 // Инициализация
 showProject(0);
 startAutoScroll();
+
 
 
