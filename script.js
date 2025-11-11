@@ -29,8 +29,10 @@ function showProject(index) {
 // Логика показа только 5 точек
 function updateDots() {
   dots.forEach((dot, i) => {
-    const diff = i - currentIndex;
-
+    dot.style.opacity = '1'; // все точки видны
+    dot.style.pointerEvents = 'auto'; // кликабельны
+    dot.classList.toggle('active', i === currentIndex);
+  });
     if (diff === 0) {
   dot.style.opacity = '1';
   dot.style.pointerEvents = 'auto';
@@ -68,6 +70,7 @@ dots.forEach(dot => {
 // Инициализация
 showProject(0);
 startAutoScroll();
+
 
 
 
