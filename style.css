@@ -227,4 +227,15 @@ footer {
     padding: 10px 18px;
     font-size: 0.9rem;
   }
+
+  .gif {
+  width: 100%;
+  max-width: 400px; /* максимальный размер */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* центрировать */
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
+
+
