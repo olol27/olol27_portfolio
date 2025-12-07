@@ -41,7 +41,7 @@ body {
 
 /* Header */
 header {
-  padding: 60px 20px;
+  padding: 20px 20px 4px;
   background: linear-gradient(to right, #e45eeb, #3fedd0);
   color: #1b151e;
   text-shadow: 0 0 8px rgba(255,255,255,0.4);
@@ -136,12 +136,34 @@ h2 {
   background: #e45eeb;
   transform: scale(1.3);
 }
+.gallery{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content:center;
+    gap: 20px;    
+    padding: 30px 30px;
+    box-sizing: border-box;           
+}
+.images {   
+}
+.gallery img {
+    width: calc(45% - 20px); /* Делим ширину пополам + учёт gap */
+    height: auto; 
+}
 
 footer {
   background: linear-gradient(to right, #3fedd0, #e45eeb);
   color: #1b151e;
-  padding: 20px;
+  padding: 10px;
   font-weight: 600;
+ position: fixed;
+ width: 100%;
+ display: flex;             
+ align-items: center;       
+ justify-content: space-between;  /* или flex-start */
+ box-sizing: border-box;
+   right: 0;
+   bottom: 0;   
 }
 
 @keyframes fade {
@@ -161,7 +183,7 @@ footer {
 
 .btn, .back-btn {
   display: inline-block;
-  padding: 12px 26px;
+  padding: 8px 26px;
   font-weight: 600;
   font-size: 1rem;
   color: #1b151e;
@@ -182,10 +204,10 @@ footer {
 
 /* ===== Кнопка "Back to Home" ===== */
 .back-btn {
-  margin-top: 25px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: inline-block;
-  padding: 10px 22px;
+  padding: 8px 22px;
   color: #1b151e;
   font-weight: 500;
   border-radius: 25px;
